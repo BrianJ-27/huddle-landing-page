@@ -7,7 +7,7 @@
 // Global Body Tag Styles
 %body-properties {
   font-family: v.$font-stack-main;
-  line-height: 1;
+  line-height: 1.5;
   min-height: 100vh;
 }
 
@@ -34,9 +34,11 @@
 %btn-properties {
   outline: none;
   border: none;
-  border-radius: v.$soft-curve;
+  border-radius: v.$hard-curve;
   letter-spacing: 1.1px;
-  font-weight: 500;
+  font-weight: v.$font-weight-normal;
+  font-size: 0.9rem;
+  text-align: center;
 }
 
 // Global Link Styles

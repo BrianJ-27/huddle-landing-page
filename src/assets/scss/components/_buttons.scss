@@ -4,19 +4,15 @@
 @use "../utilities" as *;
 
 //button styles
-.btn__overlay--full {
+.btn {
   @extend %btn-properties;
+  background-color: $white;
+  padding: px-to-rems(10px) px-to-rems(20px);
+  color: $color-main;
+  width: 70%;
+  transition: background-color 0.5s ease-in-out;
   &:hover {
-    background-color: $color-main;
-  }
-  @include mq("md") {
-  }
-}
-
-.btn__overlay--outline {
-  @extend %btn-properties;
-  &:hover {
-    background-color: transparent;
+    background-color: $color-accent;
   }
   @include mq("md") {
   }

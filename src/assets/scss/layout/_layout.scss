@@ -4,8 +4,11 @@
 @use "../utilities" as *;
 
 /*------BASE LAYOUT STYLES-----------*/
-.container {
-  max-width: $max-width;
+#root {
+  max-width: calc(100% - 2.5rem);
+  @include mq("md") {
+    max-width: $max-width;
+  }
 }
 
 /*------FLEXBOX LAYOUT STYLES-----------*/
@@ -18,27 +21,6 @@
 
 .grid__container {
   @include grid_layout_container($grid-temp-col: 100%, $grid-temp-row: auto);
-}
-
-// Grid Area Items
-header {
-  grid-area: header;
-}
-
-nav {
-  grid-area: navigation;
-}
-
-main {
-  grid-area: main;
-}
-
-aside {
-  grid-area: aside;
-}
-
-footer {
-  grid-area: footer;
 }
 
 //Main Content Grid Layout
