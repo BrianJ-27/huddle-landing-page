@@ -9,9 +9,11 @@ $header-height: 600px;
 $footer-height: 150px;
 
 //Font Stacks
-@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,700;1,400&family=Raleway&display=swap");
-$font-stack-main: "Lato", sans-serif;
-$font-stack-secondary: "Raleway", sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap");
+$font-stack-main: "Poppins", sans-serif;
+$font-stack-secondary: "Open Sans", sans-serif;
+$font-weight-normal: 400;
+$font-weight-bold: 600;
 $base-font-size: 16px;
 
 //border radius

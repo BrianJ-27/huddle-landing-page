@@ -29,30 +29,26 @@ $bean: #3d0c02;
 $bubblegum: #eec1be;
 
 /*-----Project Color Variables-----*/
-$calm-blue: #1261a6;
-$sophisticated-teal: #025e73;
-$mellow-skyblue: #29a7d9;
-$serene-midnight: #041e40;
-$relaxed-silver: #b8bcbf;
+
+$violet: hsl(257, 40%, 49%);
+$soft-magenta: hsl(300, 69%, 71%);
 $white: #fff;
 
 /*-----Functional Color Variables-----*/
-$color-main: $calm-blue;
-$color-secondary: $white;
+$color-main: $violet;
+$color-secondary: $soft-magenta;
 $color-complement: complement($color-main);
-$color-accent: $mellow-skyblue;
+$color-accent: $soft-magenta;
 
 //background / Overlay colors
-$color-bg: $serene-midnight;
+$color-bg: $color-main;
 $color-overlay: rgba($color-main, 0.5);
-$color-bg-footer: $serene-midnight;
-$color-bg-header: $serene-midnight;
 
 //Link colors
 $color-link-default: $white;
-$color-link-active: $silver-surfer;
-$color-link-hover: $sophisticated-teal;
-$color-link-visited: $silver-surfer;
+$color-link-active: $white;
+$color-link-hover: $color-accent;
+$color-link-visited: $color-accent;
 
 //Border Colors
 $color-border-light: $white;
