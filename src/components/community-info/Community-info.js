@@ -2,7 +2,7 @@ import Button from "../button/Button";
 
 const CommunityInfo = () => {
   return (
-    <section className="community-info flex__container--community">
+    <div className="community-info flex__container--community">
       <h1 className="title__primary">
         Build The Community Your Fans Will Love
       </h1>
@@ -12,7 +12,7 @@ const CommunityInfo = () => {
         in genuine discussion.
       </p>
       <Button />
-    </section>
+    </div>
   );
 };
 

@@ -3,11 +3,11 @@ import { FaFacebookF, FaTwitter, FaInstagram } from "react-icons/fa";
 const Footer = (params) => {
   return (
     <footer className="flex__container">
-      <section className="social flex__container--social">
+      <div className="social flex__container--social">
         <FaFacebookF className="img__social-icons" />
         <FaTwitter className="img__social-icons" />
         <FaInstagram className="img__social-icons" />
-      </section>
+      </div>
       <p className="footer">
         Challenge by{" "}
         <a
