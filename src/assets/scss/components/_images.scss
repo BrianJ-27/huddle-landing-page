@@ -7,12 +7,19 @@
   @extend %img-properties;
 
   &__logo {
-    max-width: 100px;
+    max-width: 140px;
+    padding-top: px-to-rems(30px);
+  }
+
+  &__hero-container {
+    width: 100%;
   }
 
   &__hero {
     display: block;
-    max-width: 275px;
+    max-width: 500px;
+    margin: 0 auto;
+    width: inherit;
   }
 
   &__social-icons {

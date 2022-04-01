@@ -5,7 +5,7 @@
 
 /*------BASE LAYOUT STYLES-----------*/
 #root {
-  max-width: calc(100% - 2.5rem);
+  max-width: calc(100% - 3rem);
   @include mq("md") {
     max-width: $max-width;
   }
@@ -15,6 +15,18 @@
 
 .flex__container {
   @include flex_me($dir: column, $wrap: wrap);
+
+  &--community {
+    @extend .flex__container;
+    align-items: center;
+  }
+
+  &--social {
+    @extend .flex__container;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: px-to-rems(15px);
+  }
 }
 
 /*------GRID LAYOUT STYLES-----------*/

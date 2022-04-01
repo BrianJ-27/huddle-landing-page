@@ -36,20 +36,16 @@
   border: none;
   border-radius: v.$hard-curve;
   letter-spacing: 1.1px;
-  font-weight: v.$font-weight-normal;
-  font-size: 0.9rem;
-  text-align: center;
+  font-weight: v.$font-weight-bold;
+  font-size: 0.75rem;
+  font-family: v.$font-stack-secondary;
+  font-style: normal;
 }
 
 // Global Link Styles
 %link-properties {
   display: inline-block;
   text-decoration: none;
-}
-
-// white text styles
-%white-text {
-  color: c.$white;
 }
 
 /******************************************
@@ -61,7 +57,12 @@ REUSEABLE SINGLE STYLES
   list-style-type: none;
 }
 
-// center text style
+// white text styles
+%white-text {
+  color: c.$white;
+}
+
+// center text styles
 %ctr-txt {
   text-align: center;
 }

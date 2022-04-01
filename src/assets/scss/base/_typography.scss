@@ -3,30 +3,30 @@
 // **************************************
 @use "../utilities" as *;
 
-.title__primary,
-.content {
-  text-align: center;
-}
-
 //h1 styles
 .title__primary {
   @extend %text-modules;
+  @extend %ctr-txt;
   padding: 0 1rem;
   @include text-prop(
-    $size: clamp(1.4rem, 7vw, 2rem),
+    $size: clamp(1rem, 6vw, 1.8rem),
     $f-weight: $font-weight-bold,
     $color: $color-text-light
   );
+  margin-top: px-to-rems(55px);
 }
 
 /*----CONTENT STYLES----*/
 
 // p styles
 .content {
-  padding: 0 0.3rem;
+  @extend %ctr-txt;
+  padding: 0 1rem;
   @include text-prop(
-    $size: clamp(0.79rem, 4vw, 1rem),
+    $size: clamp(0.75rem, 7vw, 0.9rem),
     $f-weight: $font-weight-normal,
     $color: $color-text-light
   );
+  margin-top: px-to-rems(25px);
+  margin-bottom: px-to-rems(20px);
 }

@@ -10,14 +10,14 @@ function App() {
         <img src={Logo} alt="Huddle Logo" className="img__logo" />
       </header>
       <main>
-        <section className="hero">
+        <section className="img__hero-container">
           <img
             src={HeroImg}
             alt="Mobile and desktop screens"
             className="img__hero"
           />
         </section>
-        <section className="community-info">
+        <section className="community-info flex__container--community">
           <h1 className="title__primary">
             Build The Community Your Fans Will Love
           </h1>
@@ -30,7 +30,7 @@ function App() {
             Register
           </a>
         </section>
-        <section className="social">
+        <section className="social flex__container--social">
           <FaFacebookF className="img__social-icons" />
           <FaTwitter className="img__social-icons" />
           <FaInstagram className="img__social-icons" />
@@ -38,7 +38,7 @@ function App() {
       </main>
 
       <footer>
-        <p className="attribution">
+        <p className="footer">
           Challenge by{" "}
           <a
             href="https://www.frontendmentor.io?ref=challenge"
@@ -47,7 +47,8 @@ function App() {
           >
             Frontend Mentor
           </a>
-          . Coded by <a href="#bb">Your Name Here</a>.
+          <br />
+          Coded by <a href="#bb">Brian Johnson</a>
         </p>
       </footer>
     </React.Fragment>

@@ -23,15 +23,26 @@ body,
 }
 
 body {
+  background-image: url(../../images/bg-mobile.svg);
+  background-repeat: no-repeat;
+  background-position: top 0px;
+  background-size: contain;
   background-color: $color-main;
   @extend %ctr-grid-content;
 }
 
 p {
   @extend %text-modules;
-  color: $color-text-dark;
+  color: $white;
+  font-family: $font-stack-secondary;
+}
+
+svg:nth-of-type(2) {
+  margin: 0 px-to-rems(10px);
 }
 
 a {
   @extend %link-properties;
+  color: $color-accent;
+  font-style: italic;
 }
