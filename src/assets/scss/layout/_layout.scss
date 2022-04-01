@@ -5,8 +5,8 @@
 
 /*------BASE LAYOUT STYLES-----------*/
 #root {
-  max-width: calc(100% - 3rem);
-  @include mq("md") {
+  max-width: calc(100% - 3.8rem);
+  @include mq("lg") {
     max-width: $max-width;
   }
 }
@@ -19,6 +19,9 @@
   &--community {
     @extend .flex__container;
     align-items: center;
+    @include mq("lg") {
+      align-items: flex-start;
+    }
   }
 
   &--social {
@@ -26,6 +29,10 @@
     flex-direction: row;
     justify-content: center;
     margin-bottom: px-to-rems(15px);
+    @include mq("lg") {
+      margin-bottom: px-to-rems(5px);
+      align-self: flex-end;
+    }
   }
 }
 
@@ -37,8 +44,25 @@
 
 //Main Content Grid Layout
 .main__grid--wrapper {
-  @include mq("md") {
+  @include mq("lg") {
     display: grid;
-    grid-template-columns: 50% 50%;
+    width: 100%;
+    place-items: center;
+    max-height: 600px;
+    height: 600px;
+    grid-template-columns: 59% 41%;
+    grid-template-areas: "hero-img community-info";
+    margin-top: px-to-rems(55px);
+  }
+}
+
+.hero-img {
+  grid-area: hero-img;
+}
+
+.community-info {
+  grid-area: community-info;
+  @include mq("lg") {
+    padding: 0 1.5rem;
   }
 }

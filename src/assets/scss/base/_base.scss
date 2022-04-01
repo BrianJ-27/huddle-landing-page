@@ -29,6 +29,9 @@ body {
   background-size: contain;
   background-color: $color-main;
   @extend %ctr-grid-content;
+  @include mq("lg") {
+    background-image: url(../../images/bg-desktop.svg);
+  }
 }
 
 p {
@@ -43,6 +46,6 @@ svg:nth-of-type(2) {
 
 a {
   @extend %link-properties;
-  color: $color-accent;
+  color: $white;
   font-style: italic;
 }

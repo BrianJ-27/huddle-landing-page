@@ -9,6 +9,7 @@
   @extend %ctr-txt;
   background-color: $white;
   padding: px-to-rems(10px) px-to-rems(20px);
+  margin-top: px-to-rems(15px);
   margin-bottom: px-to-rems(70px);
   color: $color-main;
   width: 70%;
@@ -16,6 +17,9 @@
   &:hover {
     background-color: $color-accent;
   }
-  @include mq("md") {
+  @include mq("lg") {
+    padding: px-to-rems(15px) px-to-rems(20px);
+    width: 40%;
+    font-size: 0.9rem;
   }
 }

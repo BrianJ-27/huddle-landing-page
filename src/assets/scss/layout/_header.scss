@@ -4,5 +4,7 @@
 @use "../utilities" as *;
 
 .header {
-  height: $header-height;
+  @include mq("lg") {
+    padding-top: px-to-rems(75px);
+  }
 }

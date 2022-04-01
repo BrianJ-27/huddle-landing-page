@@ -9,8 +9,9 @@ function App() {
       <header className="header">
         <img src={Logo} alt="Huddle Logo" className="img__logo" />
       </header>
-      <main>
-        <section className="img__hero-container">
+
+      <main className="main__grid--wrapper">
+        <section className="hero-img img__hero-container">
           <img
             src={HeroImg}
             alt="Mobile and desktop screens"
@@ -30,14 +31,14 @@ function App() {
             Register
           </a>
         </section>
+      </main>
+
+      <footer className="flex__container">
         <section className="social flex__container--social">
           <FaFacebookF className="img__social-icons" />
           <FaTwitter className="img__social-icons" />
           <FaInstagram className="img__social-icons" />
         </section>
-      </main>
-
-      <footer>
         <p className="footer">
           Challenge by{" "}
           <a

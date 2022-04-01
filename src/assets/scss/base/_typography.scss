@@ -3,17 +3,28 @@
 // **************************************
 @use "../utilities" as *;
 
+.title__primary,
+.content {
+  @include mq("lg") {
+    text-align: left;
+  }
+}
+
 //h1 styles
 .title__primary {
   @extend %text-modules;
   @extend %ctr-txt;
-  padding: 0 1rem;
+  padding: 0 0.5rem;
   @include text-prop(
-    $size: clamp(1rem, 6vw, 1.8rem),
+    $size: clamp(1rem, 6vw, 2.6rem),
     $f-weight: $font-weight-bold,
     $color: $color-text-light
   );
   margin-top: px-to-rems(55px);
+  @include mq("lg") {
+    margin-top: -7rem;
+    padding: 0 0;
+  }
 }
 
 /*----CONTENT STYLES----*/
@@ -21,9 +32,8 @@
 // p styles
 .content {
   @extend %ctr-txt;
-  padding: 0 1rem;
   @include text-prop(
-    $size: clamp(0.75rem, 7vw, 0.9rem),
+    $size: clamp(0.75rem, 7vw, 1rem),
     $f-weight: $font-weight-normal,
     $color: $color-text-light
   );

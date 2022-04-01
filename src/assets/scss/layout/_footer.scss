@@ -5,4 +5,7 @@
 
 .footer {
   @extend %ctr-txt;
+  @include mq("lg") {
+    margin-top: px-to-rems(10px);
+  }
 }
