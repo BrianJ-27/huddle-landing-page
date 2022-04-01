@@ -16,6 +16,7 @@
   transition: background-color 0.5s ease-in-out;
   &:hover {
     background-color: $color-accent;
+    box-shadow: 0 3px 10px rgba($black, 0.5);
   }
   @include mq("lg") {
     padding: px-to-rems(15px) px-to-rems(20px);

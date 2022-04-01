@@ -48,8 +48,6 @@
     display: grid;
     width: 100%;
     place-items: center;
-    max-height: 600px;
-    height: 600px;
     grid-template-columns: 59% 41%;
     grid-template-areas: "hero-img community-info";
     margin-top: px-to-rems(55px);
